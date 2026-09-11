@@ -1,57 +1,58 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<title>Shrikrushna Jadhav - Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shri Collection - Only ₹399</title>
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;text-align:center}
-.header{background:#000;color:#fff;padding:20px}
-.logo{width:110px;height:110px;border-radius:50%;border:3px solid #fff;object-fit:cover}
-.btn{padding:10px 20px;border-radius:20px;margin:5px;display:inline-block;color:#fff;text-decoration:none;font-weight:bold}
-.wa{background:#25D366}.insta{background:#E1306C}
-.slider{width:100%;max-width:900px;margin:15px auto;overflow:hidden;border-radius:15px}
-.slides{display:flex;transition:0.6s}
-.slides img{width:100%;flex-shrink:0;height:420px;object-fit:cover}
-.dots{margin:10px}.dot{width:10px;height:10px;background:#bbb;border-radius:50%;display:inline-block;margin:0 3px}.dot.active{background:#000}
-.box{background:#fff;display:inline-block;width:150px;margin:8px;padding:8px;border-radius:12px}
-.box img{width:100%;height:150px;object-fit:cover;border-radius:8px}
-.price{color:red;font-weight:bold}.order{background:#000;color:#fff;padding:6px;display:block;border-radius:15px;text-decoration:none;font-size:13px;margin-top:4px}
+body{font-family: sans-serif; text-align: center; background: #f5f5f5; margin:0;}
+.header{background: #000; color: #fff; padding: 50px 20px;}
+.profile-img{width: 150px; height:150px; border-radius: 50%; border:4px solid #fff; object-fit: cover;}
+.btn{padding: 12px 22px; text-decoration: none; border-radius: 30px; margin: 8px; display:inline-block; font-weight:bold;}
+.insta{background: #E1306C; color: white;}
+.wa{background: #25D366; color: white;}
+.shop{background:#fff; padding:30px 15px;}
+.product{display:inline-block; background:#f9f9f9; border-radius:15px; margin:15px; padding:15px; width:220px;}
+.product img{width:100%; height:220px; object-fit:cover; border-radius:10px;}
+.price{font-weight:bold; font-size:18px; margin:8px 0;}
+.order{background:#000; color:#fff; padding:10px 15px; border-radius:25px; text-decoration:none; display:block;}
 </style>
 </head>
 <body>
 <div class="header">
-<img src="banner1.jpg" class="logo">
-<h1>Shri Collection - Only ₹399</h1>
-<p>Shrikrushna Jadhav | 7887925763</p>
-<a href="https://wa.me/917887925763" class="btn wa">WhatsApp</a>
-<a href="https://www.instagram.com/mr.shrikrushn_jadhv5555" class="btn insta">Instagram</a>
+<img src="IMG-20260911-WA0330.jpg" class="profile-img">
+<h1>🙏🏻 नमस्कार मंडळी 🙏🏻 मी आपला मित्र श्रीकृष्णा जाधव </h1>
+<p>पुणे 🔁 नांदेड | Personal Portfolio</p>
+<a href="https://www.instagram.com/mr.shrikrushn_jadhv5555?stkn=ZWVxdzVmYnJlYzB4" target="_blank" class="btn insta">Instagram</a>
+<a href="https://wa.me/917887925763" target="_blank" class="btn wa">WhatsApp</a>
 </div>
 
-<div class="slider"><div class="slides" id="s">
-<IMG-20260911-WA8144.jpg  (Logo + Item 1)
-IMG-20260911-WA8145.jpg
-IMG-20260911-WA8146.jpg
-IMG-20260911-WA8147.jpg
-IMG-20260911-WA8148.jpg
-IMG-20260911-WA8149.jpg
-</div></div>
-<div class="dots" id="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="shop">
+<h2>🛒 Shri Collection - कपडे</h2>
+<p>आवडलेला कपडा Order करा - थेट मला WhatsApp वर</p>
 
-<div style="padding:10px">
-<h2>🔥 कलेक्शन - फक्त ₹399</h2>
-<div class="box"><img src="banner1.jpg"><div>Item 1</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
-<div class="box"><img src="banner2.jpg"><div>Item 2</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
-<div class="box"><img src="banner3.jpg"><div>Item 3</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
-<div class="box"><img src="banner4.jpg"><div>Item 4</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
-<div class="box"><img src="banner5.jpg"><div>Item 5</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
-<div class="box"><img src="banner6.jpg"><div>Item 6</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<div>Black T-Shirt</div>
+<div class="price">₹499</div>
+<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20Black%20T-Shirt%20₹499%20पाहिजे">Order on WhatsApp</a>
 </div>
 
-<script>
-let i=0; const sl=document.getElementById('s'); const d=document.querySelectorAll('.dot');
-function show(n){i=n; if(i>=6)i=0; if(i<0)i=5; sl.style.transform=`translateX(-${i*100}%)`; d.forEach((x,j)=>x.classList.toggle('active',j===i))}
-setInterval(()=>show(i+1),3000); d.forEach((x,k)=>x.addEventListener('click',()=>show(k)));
-</script>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
+<div>White Shirt</div>
+<div class="price">₹399 to999 </div>
+<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20White%20Shirt%20₹799%20पाहिजे">Order on WhatsApp</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7">
+<div>Hoodie</div>
+<div class="price">₹999</div>
+<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20Hoodie%20₹999%20पाहिजे">Order on WhatsApp</a>
+</div>
+
+</div>
+<p style="padding:20px;">Contact: पुणे / नांदेड - 7887925763</p>
 </body>
 </html>
