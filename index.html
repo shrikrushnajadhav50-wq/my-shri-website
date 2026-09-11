@@ -1,61 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Shrikrushna Jadhav - Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{font-family: sans-serif; text-align: center; background: #f5f5f5; margin:0;}
-.header{background: #000; color: #fff; padding: 50px 20px;}
-.profile-img{width: 150px; height:150px; border-radius: 50%; border:4px solid #fff; object-fit: cover;}
-.btn{padding: 12px 22px; text-decoration: none; border-radius: 30px; margin: 8px; display:inline-block; font-weight:bold;}
-.insta{background: #E1306C; color: white;}
-.wa{background: #25D366; color: white;}
-.shop{background:#fff; padding:30px 15px;}
-.product{display:inline-block; background:#f9f9f9; border-radius:15px; margin:15px; padding:15px; width:220px;}
-.product img{width:100%; height:220px; object-fit:cover; border-radius:10px;}
-.price{font-weight:bold; font-size:18px; margin:8px 0;}
-.order{background:#000; color:#fff; padding:10px 15px; border-radius:25px; text-decoration:none; display:block;}
-</style>
-</head>
-<body>
-<div class="header">
-<img src="IMG-20260911-WA0330.jpg" class="profile-img">
-<h1>🙏🏻 नमस्कार मंडळी 🙏🏻 मी आपला मित्र श्रीकृष्णा जाधव </h1>
-<p>पुणे 🔁 नांदेड | Personal Portfolio</p>
-<a href="https://www.instagram.com/mr.shrikrushn_jadhv5555?stkn=ZWVxdzVmYnJlYzB4" target="_blank" class="btn insta">Instagram</a>
-<a href="https://wa.me/917887925763" target="_blank" class="btn wa">WhatsApp</a>
-</div>
-
-<div class="shop">
-<h2>🛒 Shri Collection - कपडे</h2>
-<p>आवडलेला कपडा Order करा - थेट मला WhatsApp वर</p>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-<div>Black T-Shirt</div>
-<div class="price">₹499</div>
-<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20Black%20T-Shirt%20₹499%20पाहिजे">Order on WhatsApp</a>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
-<div>White Shirt</div>
-<div class="price">₹799</div>
-<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20White%20Shirt%20₹799%20पाहिजे">Order on WhatsApp</a>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7">
-<div>Hoodie</div>
-<div class="price">₹999</div>
-<a class="order" href="https://wa.me/917887925763?text=Hi%20Shri%2C%20मला%20Hoodie%20₹999%20पाहिजे">Order on WhatsApp</a>
-</div>
-
-</div>
-<p style="padding:20px;">Contact: पुणे / नांदेड - 7887925763</p>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="mr">
 <head>
@@ -70,4 +12,93 @@ body{margin:0;font-family:Arial;background:#f5f5f5;text-align:center}
 .insta{background:#E1306C} .wa{background:#25D366}
 .slider{position:relative;width:100%;max-width:900px;margin:20px auto;overflow:hidden;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.3)}
 .slides{display:flex;transition:transform 0.6s ease}
-.slides img{width:100%;flex-shrink:0;object
+.slides img{width:100%;flex-shrink:0;object-fit:cover}
+.dots{text-align:center;margin:10px}
+.dot{height:10px;width:10px;background:#bbb;border-radius:50%;display:inline-block;margin:0 4px;cursor:pointer}
+.dot.active{background:#000}
+.shop{padding:20px}
+.product{background:#fff;display:inline-block;width:170px;margin:10px;padding:10px;border-radius:15px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.product img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.price{color:#d00;font-weight:bold;margin:5px 0}
+.order{background:#000;color:#fff;padding:8px;border-radius:20px;text-decoration:none;display:block;font-size:14px}
+h2{margin-top:30px}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="IMG-20260911-WA0330.jpg" class="profile-img">
+<h1>🙏🏻 नमस्कार मंडळी 🙏🏻 श्रीकृष्णा जाधव</h1>
+<p>Shri Collection - सर्व व्हरायटी फक्त ₹399 मध्ये!</p>
+<a href="https://www.instagram.com/mr.shrikrushn_jadhv5555" target="_blank" class="btn insta">Instagram</a>
+<a href="https://wa.me/917887925763" target="_blank" class="btn wa">WhatsApp: 7887925763</a>
+</div>
+
+<!-- 5 BANNER SLIDER -->
+<div class="slider">
+<div class="slides" id="slides">
+<img src="banner1.jpg" alt="Banner 1">
+<img src="banner2.jpg" alt="Banner 2">
+<img src="banner3.jpg" alt="Banner 3">
+<img src="banner4.jpg" alt="Banner 4">
+<img src="banner5.jpg" alt="Banner 5">
+</div>
+</div>
+<div class="dots" id="dots">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+<div class="shop">
+<h2>🔥 आमचे कलेक्शन - फक्त ₹399</h2>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<div>Black T-Shirt</div>
+<div class="price">₹399</div>
+<a class="order" href="https://wa.me/917887925763?text=मला%20Black%20T-Shirt%20₹399%20पाहिजे">Order करा</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
+<div>Brand Shirt</div>
+<div class="price">₹399</div>
+<a class="order" href="https://wa.me/917887925763?text=मला%20Brand%20Shirt%20₹399%20पाहिजे">Order करा</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7">
+<div>Hoodie</div>
+<div class="price">₹399</div>
+<a class="order" href="https://wa.me/917887925763?text=मला%20Hoodie%20₹399%20पाहिजे">Order करा</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660">
+<div>Jeans</div>
+<div class="price">₹399</div>
+<a class="order" href="https://wa.me/917887925763?text=मला%20Jeans%20₹399%20पाहिजे">Order करा</a>
+</div>
+
+</div>
+
+<script>
+let index=0;
+const slides=document.getElementById('slides');
+const dots=document.querySelectorAll('.dot');
+function showSlide(i){
+index=i;
+if(index>=5)index=0;
+if(index<0)index=4;
+slides.style.transform=`translateX(-${index*100}%)`;
+dots.forEach((d,j)=>d.classList.toggle('active',j===index));
+}
+setInterval(()=>{showSlide(index+1)},3000);
+dots.forEach((d,i)=>d.addEventListener('click',()=>showSlide(i)));
+</script>
+
+</body>
+</html>
