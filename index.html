@@ -7,38 +7,51 @@
 <style>
 body{margin:0;font-family:Arial;background:#f5f5f5;text-align:center}
 .header{background:#000;color:#fff;padding:20px}
-.logo{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:cover;background:#fff}
+.logo{width:110px;height:110px;border-radius:50%;border:3px solid #fff;object-fit:cover}
 .btn{padding:10px 20px;border-radius:20px;margin:5px;display:inline-block;color:#fff;text-decoration:none;font-weight:bold}
 .wa{background:#25D366}.insta{background:#E1306C}
-.slider{width:100%;max-width:800px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
-.slider img{width:100%;height:400px;object-fit:cover}
-.box{background:#fff;display:inline-block;width:160px;margin:10px;padding:10px;border-radius:15px}
-.box img{width:100%;height:160px;object-fit:cover;border-radius:10px}
-.price{color:red;font-weight:bold}.order{background:#000;color:#fff;padding:8px;display:block;border-radius:20px;text-decoration:none;margin-top:5px}
+.slider{width:100%;max-width:900px;margin:15px auto;overflow:hidden;border-radius:15px}
+.slides{display:flex;transition:0.6s}
+.slides img{width:100%;flex-shrink:0;height:420px;object-fit:cover}
+.dots{margin:10px}.dot{width:10px;height:10px;background:#bbb;border-radius:50%;display:inline-block;margin:0 3px}.dot.active{background:#000}
+.box{background:#fff;display:inline-block;width:150px;margin:8px;padding:8px;border-radius:12px}
+.box img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+.price{color:red;font-weight:bold}.order{background:#000;color:#fff;padding:6px;display:block;border-radius:15px;text-decoration:none;font-size:13px;margin-top:4px}
 </style>
 </head>
 <body>
 <div class="header">
 <img src="banner1.jpg" class="logo">
-<h1>Shri Collection</h1>
-<p>Only ₹399 तो 599 - Shrikrushna Jadhav</p>
-<a href="https://wa.me/917887925763" class="btn wa">WhatsApp - 7887925763</a>
+<h1>Shri Collection - Only ₹399</h1>
+<p>Shrikrushna Jadhav | 7887925763</p>
+<a href="https://wa.me/917887925763" class="btn wa">WhatsApp</a>
 <a href="https://www.instagram.com/mr.shrikrushn_jadhv5555" class="btn insta">Instagram</a>
 </div>
 
-<div class="slider">
+<div class="slider"><div class="slides" id="s">
 <img src="banner1.jpg">
+<img src="banner2.jpg">
+<img src="banner3.jpg">
+<img src="banner4.jpg">
+<img src="banner5.jpg">
+<img src="banner6.jpg">
+</div></div>
+<div class="dots" id="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+
+<div style="padding:10px">
+<h2>🔥 कलेक्शन - फक्त ₹399</h2>
+<div class="box"><img src="banner1.jpg"><div>Item 1</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="box"><img src="banner2.jpg"><div>Item 2</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="box"><img src="banner3.jpg"><div>Item 3</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="box"><img src="banner4.jpg"><div>Item 4</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="box"><img src="banner5.jpg"><div>Item 5</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
+<div class="box"><img src="banner6.jpg"><div>Item 6</div><div class="price">₹399</div><a href="https://wa.me/917887925763" class="order">Order</a></div>
 </div>
 
-<div style="padding:15px">
-<h2>🔥 आमचं कलेक्शन - ₹399</h2>
-<div class="box">
-<img src="banner1.jpg">
-<div>Stylish Collection</div>
-<div class="price">₹399</div>
-<a href="https://wa.me/917887925763?text=Mala%20he%20pahije%20₹399%20wala" class="order">Order करा</a>
-</div>
-</div>
-
+<script>
+let i=0; const sl=document.getElementById('s'); const d=document.querySelectorAll('.dot');
+function show(n){i=n; if(i>=6)i=0; if(i<0)i=5; sl.style.transform=`translateX(-${i*100}%)`; d.forEach((x,j)=>x.classList.toggle('active',j===i))}
+setInterval(()=>show(i+1),3000); d.forEach((x,k)=>x.addEventListener('click',()=>show(k)));
+</script>
 </body>
 </html>
